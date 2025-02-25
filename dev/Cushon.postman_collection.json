@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "7113e11d-04c8-40cd-bf20-a9190f0ab4b2",
+		"name": "Cushon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10884919"
+	},
+	"item": [
+		{
+			"name": "deposit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"account_id\": \"8974ed1c-cbec-4899-abf9-8d496534d71a\",\n    \"deposits\": [\n        {\n            \"fund_id\": \"a10b5e72-3c6c-49b6-bc5d-a8525f20ae0a\",\n            \"amount\": \"25000\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/deposit",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deposit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "funds",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/funds",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"funds"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
